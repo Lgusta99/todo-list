@@ -1,0 +1,39 @@
+{
+    "itens": [
+        {
+            "id": 1,
+            "item": "lavar",
+            "relacao": "fals"
+        },
+        {
+            "id": 2,
+            "item": "ferragems",
+            "relacao": "fals"
+        },
+        {
+            "id": 3,
+            "item": "leite",
+            "relacao": "fals"
+        },
+        {
+            "id": 4,
+            "item": "lavar o carro",
+            "relacao": "fals"
+        },
+        {
+            "id": 5,
+            "item": "pintar",
+            "relacao": "fals"
+        },
+        {
+            "id": 6,
+            "item": "macarrao",
+            "relacao": "fals"
+        },
+        {
+            "id": 7,
+            "item": "tirar o lixo",
+            "relacao": "fals"
+        }
+    ]
+}

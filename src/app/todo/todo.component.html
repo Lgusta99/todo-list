@@ -1,0 +1,15 @@
+<div>
+    <input type="text" id="criateItem">
+    <button (click)="criateItem">adicionar</button>
+</div>
+<div *ngFor="let todo of list">
+    <div class="itemDaLista">
+        <div class="boxEItem">
+            <input type="checkbox" id="box">
+            <p>{{todo.item}}</p>
+            <p>abolir</p>
+        </div>
+        <!-- <input type="text" [(ngModel)] = "todo.item" id="listOrToDo"> -->
+    </div>
+    <hr>
+</div>
