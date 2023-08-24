@@ -1,15 +1,34 @@
-<div>
-    <input type="text" id="criateItem">
-    <button (click)="criateItem">adicionar</button>
-</div>
-<div *ngFor="let todo of list">
-    <div class="itemDaLista">
-        <div class="boxEItem">
-            <input type="checkbox" id="box">
-            <p>{{todo.item}}</p>
-            <p>abolir</p>
-        </div>
-        <!-- <input type="text" [(ngModel)] = "todo.item" id="listOrToDo"> -->
+<div class="pagina">
+    <p class="titulo" style="font-size: 30px;" >lista</p>
+    <div class="titulo">
+        <input type="text"  [(ngModel)]="item">
+        <button class="butomComf" (click)="addItemList()">Comfirmar</button>
     </div>
-    <hr>
+    <!-- itens da sua lista -->
+    <div class="listaompleta">
+        <div class="listasgeral">
+            <div *ngFor="let todo of list">
+                <!-- esta puchando apenas os itens que tem a relacao "falce" -->
+                <div *ngIf="!todo.relacao">
+                    <div class="boxEItem">
+                        <input type="checkbox" [(ngModel)]="todo.relacao" (click)="toggleRelacao(todo)">
+                        <p>{{todo.item}}</p>
+                        <button class="butX">X</button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="listasgeral2">
+            <div *ngFor="let todo of list">
+                <!-- pucha todos os item que esta com a relacao "true" -->
+                <div *ngIf="todo.relacao">
+                    <div class="boxEItem">
+                        <input type="checkbox" [(ngModel)]="todo.relacao" (click)="toggleRelacao(todo)">
+                        <p>{{todo.item}}</p>
+                        <button class="butX" (click)="deletar(todo)">X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

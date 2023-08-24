@@ -1,39 +1,49 @@
 {
-    "itens": [
-        {
-            "id": 1,
-            "item": "lavar",
-            "relacao": "fals"
-        },
-        {
-            "id": 2,
-            "item": "ferragems",
-            "relacao": "fals"
-        },
-        {
-            "id": 3,
-            "item": "leite",
-            "relacao": "fals"
-        },
-        {
-            "id": 4,
-            "item": "lavar o carro",
-            "relacao": "fals"
-        },
-        {
-            "id": 5,
-            "item": "pintar",
-            "relacao": "fals"
-        },
-        {
-            "id": 6,
-            "item": "macarrao",
-            "relacao": "fals"
-        },
-        {
-            "id": 7,
-            "item": "tirar o lixo",
-            "relacao": "fals"
-        }
-    ]
+  "itens": [
+    {
+      "item": "lavar",
+      "relacao": false,
+      "id": 1
+    },
+    {
+      "item": "ferragems",
+      "relacao": true,
+      "id": 2
+    },
+    {
+      "item": "leite",
+      "relacao": true,
+      "id": 3
+    },
+    {
+      "item": "lavar o carro",
+      "relacao": true,
+      "id": 4
+    },
+    {
+      "item": "pintar",
+      "relacao": false,
+      "id": 5
+    },
+    {
+      "item": "macarrao",
+      "relacao": false,
+      "id": 6
+    },
+    {
+      "item": "tirar o lixo",
+      "relacao": false,
+      "id": 7
+    },
+    {
+      "item": "dada",
+      "relacao": true,
+      "id": 8
+    },
+    {
+      "item": "lala",
+      "relacao": false,
+      "id": 9
+    }
+  ]
 }

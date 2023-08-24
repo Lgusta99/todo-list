@@ -1,6 +1,6 @@
-export interface TodoItes{
+export class TodoItes{
     id?: number;
-    item: string;
-    relacao: boolean;
+    item!: string;
+    relacao!: boolean;
     
 }
