@@ -1,28 +1,13 @@
 {
   "itens": [
     {
-      "item": "lavar",
-      "relacao": false,
-      "id": 1
-    },
-    {
-      "item": "ferragems",
-      "relacao": true,
-      "id": 2
-    },
-    {
       "item": "leite",
       "relacao": true,
       "id": 3
     },
     {
-      "item": "lavar o carro",
-      "relacao": true,
-      "id": 4
-    },
-    {
       "item": "pintar",
-      "relacao": false,
+      "relacao": true,
       "id": 5
     },
     {
@@ -31,19 +16,49 @@
       "id": 6
     },
     {
-      "item": "tirar o lixo",
-      "relacao": false,
-      "id": 7
-    },
-    {
       "item": "dada",
       "relacao": true,
       "id": 8
     },
     {
-      "item": "lala",
+      "item": "elefante",
       "relacao": false,
-      "id": 9
+      "id": 11
+    },
+    {
+      "item": "azul",
+      "relacao": true,
+      "id": 12
+    },
+    {
+      "item": "amarelo",
+      "relacao": true,
+      "id": 13
+    },
+    {
+      "item": "leite",
+      "relacao": false,
+      "id": 14
+    },
+    {
+      "item": "pao",
+      "relacao": false,
+      "id": 15
+    },
+    {
+      "item": "ghe",
+      "relacao": true,
+      "id": 17
+    },
+    {
+      "item": "FGHDR",
+      "relacao": false,
+      "id": 18
+    },
+    {
+      "item": "HTHRT",
+      "relacao": false,
+      "id": 19
     }
   ]
 }

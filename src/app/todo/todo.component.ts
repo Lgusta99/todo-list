@@ -50,16 +50,14 @@ export class TodoComponent implements OnInit {
       this.service.getAll().subscribe(list => {this.list=list});
     } 
 
-    toggleRelacao(item: TodoItes): void {
+    todoRelacao(item: TodoItes): void {
       // faz com que mude a relacao emtre true e falce
       item.relacao = !item.relacao;
       this.service.updateItem(item).subscribe(
-        //você pode adicionar alguma ação após a atualização
         updatedItem => {
           console.log("relacao atualizado:", updatedItem);
         },
-        // mostra o erros
-        error => {
+        error => {// mostra erros
           console.error("Erro ao atualizar a relacao", error);
         }
       );
@@ -67,9 +65,16 @@ export class TodoComponent implements OnInit {
 
     deletar(item: TodoItes): void {
       if (item.id !== undefined){
-      this.service.deletarItem(item.id)
-      }
+      this.service.deletarItem(item.id).subscribe(
+        () => {
+          console.log('Item excluído com sucesso.'); // mensagem apos ter deletado o item
+          window.location.reload(); // Recarregar a página inteira
+        },
+        error => {
+          console.error('Erro ao excluir o item:', error);
+        }
+      );
     }
 
-
+    }
 }
